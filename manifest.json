@@ -1,0 +1,20 @@
+{
+"manifest_version": 2,
+    "name": "Bumpercar Candysnatch",
+    "description": "",
+    "version": "1.0",
+    "background": {
+      "scripts": ["substitutions.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
