@@ -1,6 +1,6 @@
 # bumpercar-candysnatch
 
-Chrome extension, which replaces *Camperdown Bramblepatch* by silly names.
+Chrome extension, which replaces *Camperdown Bramblepatch* by silly names. [Web Store link](https://chrome.google.com/webstore/detail/bumpercar-candysnatch/gfgeflpiolnadakikfnhlmlmnbmadbaj)
 
 Inspiration and original substitutions come from the following AskReddit thread by [/u/shreditorOG](https://www.reddit.com/user/shreditorOG).
 
