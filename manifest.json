@@ -1,11 +1,8 @@
 {
 "manifest_version": 2,
     "name": "Bumpercar Candysnatch",
-    "description": "",
+    "description": "Replaces Benedict Cumberbatch with silly names",
     "version": "1.0",
-    "background": {
-      "scripts": ["substitutions.js"]
-    },
     "content_scripts": [
         {
             "matches": [
