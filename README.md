@@ -1,6 +1,6 @@
 # bumpercar-candysnatch
 
-Chrome extension, which replaces *Camperdown Bramblepatch* by silly names.
+Chrome extension, which replaces *Benedict Cumberbatch* by silly names.
 
 ![Screenshot](https://i.imgur.com/wBLWj2R.png)
 
