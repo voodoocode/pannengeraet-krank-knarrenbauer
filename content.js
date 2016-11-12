@@ -36,6 +36,10 @@ var substitutions = [
   'Brendadirk Cramplescrunch',
   'Bartemis Lumberjack',
   'Bendystraw Combopack',
+	'Bayonet Cul-de-sac',
+	'Bedminton Shplishnsplash',
+	'Bowlingball Cuckooclock',
+	'Bodydump Crumblesnack',
 ];
 
 var elements = document.getElementsByTagName('*');
