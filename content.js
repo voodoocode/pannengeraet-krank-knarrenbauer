@@ -13,6 +13,8 @@ var substitutionsFirst = [
     'Analgerät',
     'Abendbrot',
     'Angriffskrieg',
+    'Angedreht',
+    'Abhörgerät',
     'Ballergret',
     'Bannegret',
     'Panzergret',
@@ -37,6 +39,8 @@ var substitutionsMiddle = [
     'Krupp',
     'Krabbe',
     'Klang',
+    'Klamm,
+    'Kran'
     'Mampf',
     'Trump',
     'Trumpf'
@@ -55,6 +59,10 @@ var substitutionsLast = [
     'Keilerhauer',
     'Knarrenbauer',
     'Koksanbauer',
+    'Karottenbauer', 
+    'Kolabrauer',
+    'Kamelraucher', 
+    'Kranbauer',
     'Nervenklauer',
     'Pfaffenhauer',
     'Gassenhauer'
