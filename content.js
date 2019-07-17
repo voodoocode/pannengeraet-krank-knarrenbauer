@@ -1,4 +1,7 @@
 var substitutionsFirst = [
+    'Ammenschreck',
+    'Angelgrät'
+    'Ankerbett',
     'Annegate',
     'Annektiert',
     'Annregret',
@@ -6,9 +9,6 @@ var substitutionsFirst = [
     'Bannegret',
     'Pannengerät',
     'Panzergret',
-    'Ankerbett',
-    'Ammenschreck',
-    'Angelgrät'
 ];
 
 var substitutionsMiddle = [
@@ -17,21 +17,22 @@ var substitutionsMiddle = [
     'Klein',
     'Krampf',
     'Krank',
+    'Krebs',
+    'Krupp'
+    'Mampf'
     'Trump',
     'Trumpf',
-    'Krebs',
-    'Mampf'
 ];
 
 var substitutionsLast = [
     'Kackebauer',
     'Kalterschauer',
     'Kampfhubschrauber',
-    'Knarrenbauer',
-    'Pfaffenhauer',
-    'Nervenklauer',
-    'Keilerhauer',
     'Karpfenkauer'
+    'Keilerhauer',
+    'Knarrenbauer',
+    'Nervenklauer',
+    'Pfaffenhauer',
 ];
 
 var elements = document.getElementsByTagName('*');
