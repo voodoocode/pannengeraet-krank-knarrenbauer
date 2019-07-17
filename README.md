@@ -11,3 +11,4 @@ Otherwise download the repo and click on "Load unpacked" in chrome://extensions/
 - Forked from https://github.com/viktorsec/bumpercar-candysnatch
 
 - Feel free to open pull requests with new names!
+- Or write an issue with suggestions and I'll add them later-
