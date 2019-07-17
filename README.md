@@ -1,4 +1,4 @@
-# bumpercar-candysnatch
+# pannengeraet-krank-knarrenbauer 
 
 Chrome extension, which replaces *Annegret Kramp-Karrenbauer* by silly names.
 
