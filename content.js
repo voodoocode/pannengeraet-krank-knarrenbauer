@@ -40,7 +40,7 @@ var substitutionsMiddle = [
     'Krabbe',
     'Klang',
     'Klamm',
-    'Kran'
+    'Kran',
     'Mampf',
     'Trump',
     'Trumpf'
