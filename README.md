@@ -1,11 +1,11 @@
 # bumpercar-candysnatch
 
-Chrome extension, which replaces *Benedict Cumberbatch* by silly names.
+Chrome extension, which replaces *Annegret Kramp-Karrenbauer* by silly names.
 
-![Screenshot](https://i.imgur.com/wBLWj2R.png)
+Download the [Chrome extension file here](/anngate-krank-knarrenbauer.crx).
 
-- [Web Store link](https://chrome.google.com/webstore/detail/bumpercar-candysnatch/gfgeflpiolnadakikfnhlmlmnbmadbaj)
+- Forked from https://github.com/viktorsec/bumpercar-candysnatch
 
-- Inspiration and original substitutions come from this [AskReddit thread](https://www.reddit.com/r/AskReddit/comments/5ccuwq/whats_your_best_approximation_of_benedict/)
+- Inspiration and original substitutions come from this [reddit.com/r/de thread](https://old.reddit.com/r/de/comments/cea32a/kleine_ansammlung_von_namensbausteinen_und/)
 
 - Feel free to open pull requests with new names!

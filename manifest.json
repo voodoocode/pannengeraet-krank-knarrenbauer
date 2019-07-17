@@ -1,7 +1,7 @@
 {
 "manifest_version": 2,
-    "name": "Bumpercar Candysnatch",
-    "description": "Replaces Benedict Cumberbatch with silly names",
+    "name": "Pannengerät Trumpf Knarrenbauer",
+    "description": "Replaces Annegret Kramp-Karrenbauer with silly names",
     "version": "0.1.2",
     "content_scripts": [
         {

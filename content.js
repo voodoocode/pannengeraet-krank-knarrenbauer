@@ -1,45 +1,37 @@
-var substitutions = [
-  'Bumpercar Candysnatch',
-  'Bendypole Cabbagepatch',
-  'Beautiful Plumberscrack',
-  'Bumblebee Baggage',
-  'Bendover Cumonback',
-  'Benadryl Cucumberpot',
-  'Wimbledon Tennismatch',
-  'Clumpity Bandersnatch',
-  'Benefish Cumberface',
-  'Bembledump Melonpatch',
-  'Buildabear Bumbleswatch',
-  'Benny Cummerbund',
-  'Bandicoot Cumbercrash',
-  'Fiddledick Bandersnatch',
-  'Beneful Thundercrunch',
-  'Bundersnatch Cabbagewank',
-  'Bendydick Cuminsnatch',
-  'Bumperbadge Cabbagepatch',
-  'Beedlebop Cootersnooch',
-  'Bandersnatch Crumblebum',
-  'Benderling Crumblewrench',
-  'Viaduct Plumberthatch',
-  'Camperdown Bramblepatch',
-  'Benelux Bandersnatch',
-  'Benedict Bumberwatch',
-  'Humperdinck Cummerbund',
-  'Derelict Slumbersnatch',
-  'Benefit Viktorsec',
-  'Sherlockholmes Doctorstrange',
-  'Breadcrumbs Combatwrench',
-  'Renaissance Dumberhatch',
-  'Eggs Benedict Cucumber Patch',
-  'Bombadil Thundercats',
-  'Battleship Condornest',
-  'Brendadirk Cramplescrunch',
-  'Bartemis Lumberjack',
-  'Bendystraw Combopack',
-	'Bayonet Cul-de-sac',
-	'Bedminton Shplishnsplash',
-	'Bowlingball Cuckooclock',
-	'Bodydump Crumblesnack',
+var substitutionsFirst = [
+    'Annegate',
+    'Annektiert',
+    'Annregret',
+    'Ballergret',
+    'Bannegret',
+    'Pannengerät',
+    'Panzergret',
+    'Ankerbett',
+    'Ammenschreck',
+    'Angelgrät'
+];
+
+var substitutionsMiddle = [
+    'Kampf',
+    'Kann',
+    'Klein',
+    'Krampf',
+    'Krank',
+    'Trump',
+    'Trumpf',
+    'Krebs',
+    'Mampf'
+];
+
+var substitutionsLast = [
+    'Kackebauer',
+    'Kalterschauer',
+    'Kampfhubschrauber',
+    'Knarrenbauer',
+    'Pfaffenhauer',
+    'Nervenklauer',
+    'Keilerhauer',
+    'Karpfenkauer'
 ];
 
 var elements = document.getElementsByTagName('*');
@@ -50,9 +42,13 @@ for (var i = 0; i < elements.length; i++) {
     for (var j = 0; j < element.childNodes.length; j++) {
         var node = element.childNodes[j];
 
+        var replacement = substitutionsFirst[Math.floor(Math.random() * substitutionsFirst.length)] +
+            " " + substitutionsMiddle[Math.floor(Math.random() * substitutionsFirst.length)] +
+            "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)]
+
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/Benedict Cumberbatch|Cumberbatch/gi, substitutions[Math.floor(Math.random() * substitutions.length)]);
+            var replacedText = text.replace(/Annegret Kramp-Karrenbauer|Kramp-Karrenbauer/gi, replacement);
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
