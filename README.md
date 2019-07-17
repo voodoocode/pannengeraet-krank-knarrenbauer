@@ -10,10 +10,10 @@ Browser extension, which replaces *Annegret Kramp-Karrenbauer* by silly names.
 * click "Load Temporary Add-on"
 * select any file in your extension's directory, e.g. manifest.json
 
-### Chrome / Opera
-* download the repo.
-* open chrome://extensions/  (or opera://extensions/ )
-* toggle "Developer mode" on (top right switch)
+### Chrome / Opera / Edge (> 76)
+* download the repo
+* open chrome://extensions/  (or opera://extensions/ or edge://extensions/)
+* toggle "Developer mode" switch on
 * click button "Load unpacked"
 * choose the folder of the repo
 
