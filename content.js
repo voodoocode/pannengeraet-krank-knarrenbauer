@@ -9,6 +9,8 @@ var substitutionsFirst = [
     'Bannegret',
     'Pannengerät',
     'Panzergret',
+    'Analgape',
+    'Analgerät'
 ];
 
 var substitutionsMiddle = [
@@ -18,17 +20,17 @@ var substitutionsMiddle = [
     'Krampf',
     'Krank',
     'Krebs',
-    'Krupp'
-    'Mampf'
+    'Krupp',
+    'Mampf',
     'Trump',
-    'Trumpf',
+    'Trumpf'
 ];
 
 var substitutionsLast = [
     'Kackebauer',
     'Kalterschauer',
     'Kampfhubschrauber',
-    'Karpfenkauer'
+    'Karpfenkauer',
     'Keilerhauer',
     'Knarrenbauer',
     'Nervenklauer',
