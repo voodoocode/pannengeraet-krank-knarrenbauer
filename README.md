@@ -2,7 +2,7 @@
 
 Chrome extension, which replaces *Annegret Kramp-Karrenbauer* by silly names.
 
-Download the [Chrome extension file here](/anngate-krank-knarrenbauer.crx).
+Download the [Chrome extension file here](https://github.com/voodoocode/pannengeraet-krank-knarrenbauer/blob/master/annegate-krank-knarrenbauer.crx).
 
 - Forked from https://github.com/viktorsec/bumpercar-candysnatch
 
