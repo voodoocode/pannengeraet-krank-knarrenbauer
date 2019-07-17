@@ -1,18 +1,18 @@
 # Pannengerät Krank-Knarrenbauer
 
-Browser extension, which replaces *Annegret Kramp-Karrenbauer* by silly names.
+Browser extension, which replaces *Ammenschreck Krebs-Katzenjammer* by silly names.
 
 ## 🛠 Installation
 
 ### Firefox
 * download the repo
-* open "about:debugging"
+* open `about:debugging`
 * click "Load Temporary Add-on"
-* select any file in your extension's directory, e.g. manifest.json
+* select any file in your extension's directory, e.g. `manifest.json`
 
 ### Chrome / Opera / Edge (>= 76)
 * download the repo
-* open chrome://extensions/  (or opera://extensions/ or edge://extensions/)
+* open `chrome://extensions/`  (or `opera://extensions/` or `edge://extensions/`)
 * toggle "Developer mode" switch on
 * click button "Load unpacked"
 * choose the folder of the repo
