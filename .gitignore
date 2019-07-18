@@ -1,0 +1,9 @@
+# os stuff
+
+# npm stuff
+node_modules/
+npm-debug.log
+package-lock.json
+
+# browser files
+web-ext-artifacts/
