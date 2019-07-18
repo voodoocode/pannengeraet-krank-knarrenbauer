@@ -87,13 +87,15 @@ for (var i = 0; i < elements.length; i++) {
         var replacementFullname = substitutionsFirst[Math.floor(Math.random() * substitutionsFirst.length)] +
             " " + substitutionsMiddle[Math.floor(Math.random() * substitutionsMiddle.length)] +
             "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)];
-        var replacementNickname = nicknames[Math.floor(Math.random() * nicknames.length)];
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/Annegret Kramp-Karrenbauer|Kramp-Karrenbauer/gi, replacementFullname).replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
+            var replacedText = text.replace(/Annegret Kramp-Karrenbauer|Kramp-Karrenbauer/gi, replacementFullname);
 
             if (replacedText !== text) {
+                var replacementNickname = nicknames[Math.floor(Math.random() * nicknames.length)];
+                replacedText = replacedText.replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
+
                 element.replaceChild(document.createTextNode(replacedText), node);
             }
         }
