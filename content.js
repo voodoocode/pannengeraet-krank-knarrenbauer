@@ -85,6 +85,7 @@ var substitutionsLast = [
     'Karottenbauer',
     'Kolabrauer',
     'Kamelraucher',
+    'Kranbauer',
     'Klosteinmauer',
     'Karatehauer',
     'Klausverhauer',
@@ -115,6 +116,14 @@ var substitutionsLast = [
     'Wackelbauchtier',
 ];
 
+var nicknames = [
+    'AKK-47',
+    'Büchsengretl',
+    'CDUzi',
+    'Granaten-Gretel',
+    'Knarren-Greta'
+];
+
 var elements = document.getElementsByTagName('*');
 
 for (var i = 0; i < elements.length; i++) {
@@ -123,13 +132,14 @@ for (var i = 0; i < elements.length; i++) {
     for (var j = 0; j < element.childNodes.length; j++) {
         var node = element.childNodes[j];
 
-        var replacement = substitutionsFirst[Math.floor(Math.random() * substitutionsFirst.length)] +
+        var replacementFullname = substitutionsFirst[Math.floor(Math.random() * substitutionsFirst.length)] +
             " " + substitutionsMiddle[Math.floor(Math.random() * substitutionsMiddle.length)] +
-            "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)]
+            "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)];
+        var replacementNickname = nicknames[Math.floor(Math.random() * nicknames.length)];
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/Annegret Kramp-Karrenbauer|Kramp-Karrenbauer/gi, replacement);
+            var replacedText = text.replace(/Annegret Kramp-Karrenbauer|Kramp-Karrenbauer/gi, replacementFullname).replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
