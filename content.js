@@ -78,7 +78,7 @@ for (var i = 0; i < elements.length; i++) {
 
         var replacement = substitutionsFirst[Math.floor(Math.random() * substitutionsFirst.length)] +
             " " + substitutionsMiddle[Math.floor(Math.random() * substitutionsMiddle.length)] +
-            "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)]
+            "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)];
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
