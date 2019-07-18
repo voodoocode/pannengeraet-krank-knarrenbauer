@@ -1,6 +1,7 @@
 # Pannengerät Krank-Knarrenbauer
 
 Browser extension, which replaces *Ammenschreck Krebs-Katzenjammer* by silly names.
+Finds the combination of first name and last, only last name and also the abbreviation of her initials.
 
 ## 🛠 Installation
 
