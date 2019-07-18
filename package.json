@@ -5,7 +5,7 @@
   "main": "content.js",
   "scripts": {
     "start:firefox": "web-ext run --source-dir ./",
-    "build": "web-ext build"
+    "build": "web-ext build --overwrite-dest"
   },
   "repository": {
     "type": "git",
