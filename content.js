@@ -37,8 +37,10 @@ var substitutionsFirst = [
     'Abfluggate',
     'Abhörgerät',
     'Alleskleb',
+    'Algensee',
     'Ballergret',
     'Bannegret',
+    'Pansensalat',
     'Panzergret',
     'Pannengerät',
     'Stoßgebet',
@@ -50,6 +52,8 @@ var substitutionsFirst = [
 
 var substitutionsMiddle = [
     'Ganz',
+    'Hanf',
+    'Harz',
     'Kampf',
     'Kann',
     'Klein',
@@ -75,15 +79,18 @@ var substitutionsMiddle = [
     'Trumpf',
     'Tand',
     'Sand',
+    'Schrank',
     'Land',
     'Pfand',
     'Kant',
     'Band',
     'Wand',
+    'Punk'
 ];
 
 var substitutionsLast = [
     'Akkuschrauber',
+    'Flaschenknauser',
     'Gartenlaube',
     'Gassenhauer',
     'Harkenklauber',
@@ -111,6 +118,7 @@ var substitutionsLast = [
     'Krillverdauer',
     'Katerflauer',
     'Katzenmiauer',
+    'Katzenkrauler',
     'Knotentauer',
     'Koreamauer',
     'Kamillenbrauer',
@@ -132,6 +140,7 @@ var substitutionsLast = [
     'Schnakenfauna',
     'Winterpflaume',
     'Wackelbauchtier',
+    'Wannentaucher'
 ];
 
 var nicknames = [
