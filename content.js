@@ -159,12 +159,12 @@ for (var i = 0; i < elements.length; i++) {
     for (var j = 0; j < element.childNodes.length; j++) {
         var node = element.childNodes[j];
 
-        var replacementFullname = substitutionsFirst[Math.floor(Math.random() * substitutionsFirst.length)] +
-            " " + substitutionsMiddle[Math.floor(Math.random() * substitutionsMiddle.length)] +
-            "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)];
-        var replacementNickname = nicknames[Math.floor(Math.random() * nicknames.length)];
-
         if (node.nodeType === 3) {
+            var replacementFullname = substitutionsFirst[Math.floor(Math.random() * substitutionsFirst.length)] +
+                " " + substitutionsMiddle[Math.floor(Math.random() * substitutionsMiddle.length)] +
+                "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)];
+            var replacementNickname = nicknames[Math.floor(Math.random() * nicknames.length)];
+
             var text = node.nodeValue;
             var replacedText = text.replace(/Annegret Kramp-Karrenbauer|Kramp-Karrenbauer/gi, replacementFullname).replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
 
