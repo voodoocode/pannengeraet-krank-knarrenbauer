@@ -1,4 +1,4 @@
-var substitutionsFirst = [
+const substitutionsFirst = [
     'Ammenschreck',
     'Allesweg',
     'Akazienfleck',
@@ -51,7 +51,7 @@ var substitutionsFirst = [
     'Un-Fair Trade',
 ];
 
-var substitutionsMiddle = [
+const substitutionsMiddle = [
     'Ganz',
     'Hanf',
     'Harz',
@@ -90,7 +90,7 @@ var substitutionsMiddle = [
     'Punk'
 ];
 
-var substitutionsLast = [
+const substitutionsLast = [
     'Akkuschrauber',
     'Flaschenknauser',
     'Gartenlaube',
@@ -146,7 +146,7 @@ var substitutionsLast = [
     'Wannentaucher'
 ];
 
-var nicknames = [
+const nicknames = [
     'AKK-47',
     'Büchsengretl',
     'CDUzi',
@@ -154,22 +154,20 @@ var nicknames = [
     'Knarren-Greta'
 ];
 
-var elements = document.getElementsByTagName('*');
+const elements = document.getElementsByTagName('*');
 
-for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
+const getRandomEntry = entries => entries[Math.floor(Math.random() * entries.length)]
 
-    for (var j = 0; j < element.childNodes.length; j++) {
-        var node = element.childNodes[j];
-
+for (const element of elements) {
+    for (const node of element.childNodes) {
         if (node.nodeType === 3) {
-            var replacementFullname = substitutionsFirst[Math.floor(Math.random() * substitutionsFirst.length)] +
-                " " + substitutionsMiddle[Math.floor(Math.random() * substitutionsMiddle.length)] +
-                "-" + substitutionsLast[Math.floor(Math.random() * substitutionsLast.length)];
-            var replacementNickname = nicknames[Math.floor(Math.random() * nicknames.length)];
+            const replacementFullname = getRandomEntry(substitutionsFirst) +
+                " " + getRandomEntry(substitutionsMiddle) +
+                "-" + getRandomEntry(substitutionsLast);
+            const replacementNickname = getRandomEntry(nicknames);
 
-            var text = node.nodeValue;
-            var replacedText = text.replace(/(?:Annegret )?Kramp-Karrenbauer/gi, replacementFullname).replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
+            const text = node.nodeValue;
+            const replacedText = text.replace(/(?:Annegret )?Kramp-Karrenbauer/gi, replacementFullname).replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
