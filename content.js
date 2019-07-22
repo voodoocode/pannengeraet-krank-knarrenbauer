@@ -169,7 +169,7 @@ for (var i = 0; i < elements.length; i++) {
             var replacementNickname = nicknames[Math.floor(Math.random() * nicknames.length)];
 
             var text = node.nodeValue;
-            var replacedText = text.replace(/Annegret Kramp-Karrenbauer|Kramp-Karrenbauer/gi, replacementFullname).replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
+            var replacedText = text.replace(/(?:Annegret )?Kramp-Karrenbauer/gi, replacementFullname).replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
