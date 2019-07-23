@@ -6,6 +6,10 @@ Finds the combination of first name and last, only last name and also the abbrev
 ## 🛠 Installation
 
 ### Firefox (>= 51)
+* Get the extension from the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/pannengerat-krank-knarrenbauer/)
+
+or
+
 * download the repo
 * open `about:debugging`
 * click "Load Temporary Add-on"
