@@ -5,7 +5,7 @@ Finds the combination of first name and last, only last name and also the abbrev
 
 ## 🛠 Installation
 
-### Firefox
+### Firefox (>= 51)
 * download the repo
 * open `about:debugging`
 * click "Load Temporary Add-on"
@@ -13,7 +13,7 @@ Finds the combination of first name and last, only last name and also the abbrev
 
 ### Chrome / Opera / Edge (>= 76)
 * download the repo
-* open `chrome://extensions/`  (or `opera://extensions/` or `edge://extensions/`)
+* open `chrome://extensions/` (or `opera://extensions/` or `edge://extensions/`)
 * toggle "Developer mode" switch on
 * click button "Load unpacked"
 * choose the folder of the repo
@@ -29,6 +29,7 @@ Finds the combination of first name and last, only last name and also the abbrev
 - Thanks to all the contributors, be it PRs, suggestions on reddit or whatever
 
 ## 🔨 Development
+
 * first do: `npm install`
 * for development in Firefox run `npm run start:firefox`
 * the extension will reload if any source file changes
