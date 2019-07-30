@@ -154,23 +154,30 @@ const nicknames = [
     'Knarren-Greta',
 ];
 
-const elements = document.getElementsByTagName('*');
-
 const getRandomEntry = entries => entries[Math.floor(Math.random() * entries.length)]
 
-for (const element of elements) {
-    for (const node of element.childNodes) {
-        if (node.nodeType === 3) {
-            const replacementFullname = getRandomEntry(substitutionsFirst) +
-                " " + getRandomEntry(substitutionsMiddle) +
-                "-" + getRandomEntry(substitutionsLast);
-            const replacementNickname = getRandomEntry(nicknames);
+const pageHtml = document.getElementsByTagName('html')[0].innerHTML;
 
-            const text = node.nodeValue;
-            const replacedText = text.replace(/(?:Annegret )?Kramp-Karrenbauer/gi, replacementFullname).replace(/\bAKK\b(?![ -]47)/gi, replacementNickname);
+const regexName = /(?:Annegret )?Kramp-Karrenbauer/gi;
+const regexShort = /\bAKK\b(?![ -]47)/gi;
 
-            if (replacedText !== text) {
-                element.replaceChild(document.createTextNode(replacedText), node);
+if (pageHtml.match(regexName) || pageHtml.match(regexShort)) {
+    const elements = document.getElementsByTagName('*');
+
+    for (const element of elements) {
+        for (const node of element.childNodes) {
+            if (node.nodeType === 3) {
+                const replacementFullname = getRandomEntry(substitutionsFirst) +
+                    " " + getRandomEntry(substitutionsMiddle) +
+                    "-" + getRandomEntry(substitutionsLast);
+                const replacementNickname = getRandomEntry(nicknames);
+
+                const text = node.nodeValue;
+                const replacedText = text.replace(regexName, replacementFullname).replace(regexShort, replacementNickname);
+
+                if (replacedText !== text) {
+                    element.replaceChild(document.createTextNode(replacedText), node);
+                }
             }
         }
     }
