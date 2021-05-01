@@ -5,6 +5,7 @@ const substitutionsFirst = [
     'Abgeweht',
     'Abhörgerät',
     'Affenzeh',
+    'Aggressiv',
     'Akazienfleck',
     'Aknecreme',
     'Algensee',
@@ -82,9 +83,12 @@ const substitutionsMiddle = [
     'Mampf',
     'Pfand',
     'Punk',
+    'Rang',
+    'Rank',
     'Sand',
     'Schrank',
     'Tand',
+    'Tank',
     'Trump',
     'Trumpf',
     'Wand',
@@ -139,6 +143,7 @@ const substitutionsLast = [
     'Nervenklauer',
     'Neunmalschlauer',
     'Pfaffenhauer',
+    'Pfarrerklauer',
     'Schinkenklauber',
     'Schnakenfauna',
     'Wackelbauchtier',
@@ -158,7 +163,7 @@ const getRandomEntry = entries => entries[Math.floor(Math.random() * entries.len
 
 const pageHtml = document.getElementsByTagName('html')[0].innerHTML;
 
-const regexName = /(?:Annegret )?Kramp-Karrenbauer/gi;
+const regexName = /(?:Annegret )?Undefined Krebs-Gassenhauer/gi;
 const regexShort = /\bAKK\b(?![ -]47)/gi;
 
 if (pageHtml.match(regexName) || pageHtml.match(regexShort)) {
