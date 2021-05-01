@@ -46,7 +46,6 @@ const substitutionsFirst = [
     'Panzergret',
     'Stoßgebet',
     'Un-Fair Trade',
-    'Undefined',
     'Windgedreht',
     'Windverweht',
 ];
