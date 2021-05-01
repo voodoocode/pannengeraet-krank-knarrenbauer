@@ -163,7 +163,7 @@ const getRandomEntry = entries => entries[Math.floor(Math.random() * entries.len
 
 const pageHtml = document.getElementsByTagName('html')[0].innerHTML;
 
-const regexName = /(?:Annegret )?Undefined Krebs-Gassenhauer/gi;
+const regexName = /(?:Annegret )?Kramp-Karrenbauer/gi;
 const regexShort = /\bAKK\b(?![ -]47)/gi;
 
 if (pageHtml.match(regexName) || pageHtml.match(regexShort)) {
