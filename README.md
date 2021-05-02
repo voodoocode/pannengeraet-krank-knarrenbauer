@@ -1,26 +1,28 @@
 # Pannengerät Krank-Knarrenbauer
 
-Browser extension, which replaces *Ammenschreck Krebs-Katzenjammer* by silly names.
-Finds the combination of first name and last, only last name and also the abbreviation *AKK* of her initials.
+Browser extension, which replaces _Ammenschreck Krebs-Katzenjammer_ by silly names.
+Finds the combination of first name and last, only last name and also the abbreviation _AKK_ of her initials.
 
 ## 🛠 Installation
 
 ### Firefox (>= 51)
-* Get the extension from the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/pannengerat-krank-knarrenbauer/)
+
+- Get the extension from the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/pannengerat-krank-knarrenbauer/)
 
 or
 
-* download the repo
-* open `about:debugging`
-* click "Load Temporary Add-on"
-* select any file in your extension's directory, e.g. `manifest.json`
+- download the repo
+- open `about:debugging`
+- click "Load Temporary Add-on"
+- select any file in your extension's directory, e.g. `manifest.json`
 
 ### Chrome / Opera / Edge (>= 76)
-* download the repo
-* open `chrome://extensions/` (or `opera://extensions/` or `edge://extensions/`)
-* toggle "Developer mode" switch on
-* click button "Load unpacked"
-* choose the folder of the repo
+
+- download the repo
+- open `chrome://extensions/` (or `opera://extensions/` or `edge://extensions/`)
+- toggle "Developer mode" switch on
+- click button "Load unpacked"
+- choose the folder of the repo
 
 ## 👍 Credits
 
@@ -34,6 +36,6 @@ or
 
 ## 🔨 Development
 
-* first do: `npm install`
-* for development in Firefox run `npm run start:firefox`
-* the extension will reload if any source file changes
+- first do: `npm install`
+- for development in Firefox run `npm run start:firefox`
+- the extension will reload if any source file changes

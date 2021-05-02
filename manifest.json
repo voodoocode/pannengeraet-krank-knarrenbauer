@@ -1,17 +1,13 @@
 {
-"manifest_version": 2,
-    "name": "Pannengerät Trumpf Knarrenbauer",
-    "description": "Replaces Annegret Kramp-Karrenbauer with silly names",
-    "version": "0.2.0",
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*/*"
-            ],
-            "js": [
-                "content.js"
-            ],
-            "run_at": "document_end"
-        }
-    ]
+  "manifest_version": 2,
+  "name": "Pannengerät Trumpf Knarrenbauer",
+  "description": "Replaces Annegret Kramp-Karrenbauer with silly names",
+  "version": "0.2.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
 }

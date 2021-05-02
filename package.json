@@ -1,7 +1,7 @@
 {
   "name": "annegate-krank-knarrenbauer",
   "description": "Browser extension, which replaces *Ammenschreck Krebs-Katzenjammer* by silly names.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "content.js",
   "scripts": {
     "start:firefox": "web-ext run --source-dir ./",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/voodoocode/pannengeraet-krank-knarrenbauer#readme",
   "dependencies": {},
   "devDependencies": {
+    "prettier": "2.2.1",
     "web-ext": "6.1.0"
   }
 }
