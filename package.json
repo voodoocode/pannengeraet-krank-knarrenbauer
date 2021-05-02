@@ -1,7 +1,7 @@
 {
   "name": "annegate-krank-knarrenbauer",
   "description": "Browser extension, which replaces *Ammenschreck Krebs-Katzenjammer* by silly names.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "content.js",
   "scripts": {
     "start:firefox": "web-ext run --source-dir ./",
