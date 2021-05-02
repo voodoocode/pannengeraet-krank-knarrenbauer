@@ -19,6 +19,7 @@
   "homepage": "https://github.com/voodoocode/pannengeraet-krank-knarrenbauer#readme",
   "dependencies": {},
   "devDependencies": {
+    "prettier": "2.2.1",
     "web-ext": "6.1.0"
   }
 }
