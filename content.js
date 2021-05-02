@@ -81,6 +81,7 @@ const substitutionsMiddle = [
     'Lanz',
     'Mampf',
     'Pfand',
+    'Pflanz',
     'Punk',
     'Sand',
     'Schrank',
