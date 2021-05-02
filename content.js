@@ -9,6 +9,7 @@ const people = [
       "Abgeweht",
       "Abhörgerät",
       "Affenzeh",
+      "Aggressiv",
       "Akazienfleck",
       "Aknecreme",
       "Algensee",
@@ -86,9 +87,11 @@ const people = [
       "Pfand",
       "Pflanz",
       "Punk",
+      "Rang",
       "Sand",
       "Schrank",
       "Tand",
+      "Tank",
       "Trump",
       "Trumpf",
       "Wand",
@@ -143,6 +146,7 @@ const people = [
       "-Nervenklauer",
       "-Neunmalschlauer",
       "-Pfaffenhauer",
+      "-Pfarrerklauer",
       "-Schinkenklauber",
       "-Schnakenfauna",
       "-Wackelbauchtier",
@@ -227,7 +231,10 @@ for (const person of people) {
           let usedReplacement = replacementComplete;
 
           //if first and last names exist, by chance a combined name may used
-          if (person.substitutionsFirst.length && person.substitutionsLast.length) {
+          if (
+            person.substitutionsFirst.length &&
+            person.substitutionsLast.length
+          ) {
             const replacementCombiName =
               getRandomEntry(person.substitutionsFirst) +
               " " +
