@@ -15,7 +15,7 @@ I added some logic/randomness wheter a combined name of first-, middle- and last
 
 ### Firefox (>= 51)
 
-- Get the extension from the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/pannengerat-krank-knarrenbauer/)
+- Get the extension from the [Firefox Add-ons page](https://addons.mozilla.org/de-DE/firefox/addon/pannengerat-krank-knarrenbauer/)
 
 or
 
