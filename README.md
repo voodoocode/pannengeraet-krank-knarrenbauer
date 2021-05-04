@@ -3,14 +3,6 @@
 Browser extension, which replaces _Ammenschreck Krebs-Katzenjammer_ (and other persons) by silly names.
 Finds the combination of first name and last, only last name and also the abbreviation _AKK_ initials.
 
-## ✨ New in v0.3: Replacement of other people
-
-As per public request on r/de:
-
-Other relevant people are being found and replaced with silly names.
-
-I added some logic/randomness wheter a combined name of first-, middle- and lastname is used _or_ a full nickname.
-
 ## 🛠 Installation
 
 ### Firefox (>= 51)
@@ -41,9 +33,23 @@ or
 
 - Thanks to all the contributors, be it PRs, suggestions on reddit or whatever
 
+## Version history
+
+### ✨ New in v0.3: Replacement of other people
+
+As per public request on r/de:
+
+Other relevant people are being found and replaced with silly names.
+
+I added some logic/randomness wheter a combined name of first-, middle- and lastname is used _or_ a full nickname.
+
 ## Contribution
 
 Feel free to open pull requests with new names or persons.
+
+NOTICE: be sure to not have the extension activated in the browser, when using the Github frontend editor. 
+It will probably also do it's replacements in there and introduce bugs. This will be fixed in a future version, but just to be sure.
+
 When adding new persons follow this format of the object:
 
 ```javascript
