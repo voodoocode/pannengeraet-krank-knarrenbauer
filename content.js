@@ -217,7 +217,10 @@ const getRandomEntry = (entries) =>
 const pageHtml = document.getElementsByTagName("html")[0].innerHTML;
 
 for (const person of people) {
-  if (pageHtml.match(person.regexName) || pageHtml.match(person.regexAbbrev)) {
+  if (
+    (person.regexName !== null && pageHtml.match(person.regexName)) ||
+    (person.regexAbbrev !== null && pageHtml.match(person.regexAbbrev))
+  ) {
     const elements = document.getElementsByTagName("*");
 
     for (const element of elements) {
