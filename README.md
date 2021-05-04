@@ -47,7 +47,7 @@ I added some logic/randomness wheter a combined name of first-, middle- and last
 
 Feel free to open pull requests with new names or persons.
 
-NOTICE: be sure to not have the extension activated in the browser, when using the Github frontend editor. 
+NOTICE: be sure to not have the extension activated in the browser, when using the Github frontend editor.
 It will probably also do it's replacements in there and introduce bugs. This will be fixed in a future version, but just to be sure.
 
 When adding new persons follow this format of the object:
