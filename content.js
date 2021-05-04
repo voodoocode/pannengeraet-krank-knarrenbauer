@@ -170,7 +170,7 @@ const people = [
     substitutionsComplete: ["Giro Olaf", "Wumms-Olaf"],
   },
   {
-    regexName: /(?:Andreas )?Scheuer/gi,
+    regexName: /(?:Andreas |Andi |Andy )?[S]{1}cheuer\s{1}/g,
     regexAbbrev: null,
     substitutionsFirst: ["Andi"],
     substitutionsMiddle: [" "],
@@ -228,7 +228,7 @@ for (const person of people) {
         if (node.nodeType === 3) {
           const replacementComplete = getRandomEntry(
             person.substitutionsComplete
-          );
+          ) + " ";
 
           //default is complete names
           let usedReplacement = replacementComplete;
@@ -243,7 +243,7 @@ for (const person of people) {
               " " +
               getRandomEntry(person.substitutionsMiddle) + //middle is optional
               "" +
-              getRandomEntry(person.substitutionsLast);
+              getRandomEntry(person.substitutionsLast) + " ";
 
             usedReplacement =
               Math.random() > 0.5 ? replacementCombiName : replacementComplete;
