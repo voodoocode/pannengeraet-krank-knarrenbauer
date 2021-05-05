@@ -224,6 +224,11 @@ for (const person of people) {
     const elements = document.getElementsByTagName("*");
 
     for (const element of elements) {
+      const tagName = element.tagName.toLowerCase();
+      if (tagName === "textarea") continue;
+      if (tagName === "input") continue;
+      if (element.hasAttribute("contentEditable")) return;
+
       for (const node of element.childNodes) {
         if (node.nodeType === 3) {
           const replacementComplete = getRandomEntry(
