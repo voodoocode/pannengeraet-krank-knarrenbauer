@@ -227,7 +227,7 @@ for (const person of people) {
       const tagName = element.tagName.toLowerCase();
       if (tagName === "textarea") continue;
       if (tagName === "input") continue;
-      if (element.hasAttribute("contentEditable")) return;
+      if (element.hasAttribute("contentEditable")) continue;
 
       for (const node of element.childNodes) {
         if (node.nodeType === 3) {
