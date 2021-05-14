@@ -3,7 +3,7 @@
 Browser extension, which replaces _Ammenschreck Krebs-Katzenjammer_ by silly names.
 Finds the combination of first name and last, or only last name.
 
-It is also possible to enable some other replacements for other persons.
+It is also possible to enable some other replacements for other persons in the extensions settings page.
 
 ## 🛠 Installation
 
