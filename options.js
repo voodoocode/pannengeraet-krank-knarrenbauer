@@ -45,25 +45,27 @@ function restoreOptions() {
 function loadPeople() {
   for ([index, person] of people.entries()) {
     {
-      const div = htmlToElements(`
-      <div>
-        <input type="checkbox" class="checkbox" id="check-${index}" name="person-${index}" />
-        <label for="check-${index}">${person.regexName}</label>
-      </div>
-      `);
-      document.querySelector("#settings").append(...div);
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.className = "checkbox";
+      input.id = `check-${index}`;
+      input.name = `person-${index}`;
+
+      var label = document.createElement("label");
+      label.for = `check-${index}`;
+      label.innerText = person.regexName + "";
+
+      var div = document.createElement("div");
+      div.appendChild(input);
+      div.appendChild(label);
+
+      document.querySelector("#settings").appendChild(div);
     }
   }
 
   restoreOptions();
 
   document.querySelector("form").addEventListener("submit", saveOptions);
-}
-
-function htmlToElements(html) {
-  var template = document.createElement("template");
-  template.innerHTML = html;
-  return template.content.childNodes;
 }
 
 document.addEventListener("DOMContentLoaded", loadPeople);
