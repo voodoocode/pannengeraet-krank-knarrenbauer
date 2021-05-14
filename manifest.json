@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Pannengerät Trumpf Knarrenbauer",
   "description": "Replaces Annegret Kramp-Karrenbauer with silly names",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "content_scripts": [
     {
       "matches": ["*://*/*"],
@@ -16,7 +16,7 @@
   "permissions": ["storage"],
   "browser_specific_settings": {
     "gecko": {
-      "id": "pannengerat-krank-knarrenbauer@example.com"
+      "id": "{c8bae626-a662-43bc-966b-c432ab4f74c7}"
     }
   }
 }
