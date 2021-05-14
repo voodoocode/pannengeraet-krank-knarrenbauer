@@ -1,7 +1,9 @@
 # Pannengerät Krank-Knarrenbauer
 
-Browser extension, which replaces _Ammenschreck Krebs-Katzenjammer_ (and other persons) by silly names.
-Finds the combination of first name and last, only last name and also the abbreviation _AKK_ initials.
+Browser extension, which replaces _Ammenschreck Krebs-Katzenjammer_ by silly names.
+Finds the combination of first name and last, or only last name.
+
+It is also possible to enable some other replacements for other persons in the extensions settings page.
 
 ## 🛠 Installation
 
@@ -24,31 +26,32 @@ or
 - click button "Load unpacked"
 - choose the folder of the repo
 
-## 👍 Credits
+## 🕰 Version history
 
-- Inspiration and original substitutions come from this [reddit.com/r/de thread](https://old.reddit.com/r/de/comments/cea32a/kleine_ansammlung_von_namensbausteinen_und/)
+### ✨ v0.4: Options page to toggle replacements and disabling other names
 
-- Forked from https://github.com/viktorsec/bumpercar-candysnatch
-- Or write an issue with suggestions and I'll add them later
+By default this restores the original behavoiur of the extension, only replacing AKK.
 
-- Thanks to all the contributors, be it PRs, suggestions on reddit or whatever
+It disables the other replacements introduced in the previous version.
+You are now free to choose which replacements are enabled via the extensions settings page (Extras > Add-ons > Extensions > Choose the extenstion > switch to second tab).
 
-## Version history
-
-### ✨ New in v0.3: Replacement of other people
-
-As per public request on r/de:
+### v0.3: Replacement of other people
 
 Other relevant people are being found and replaced with silly names.
 
 I added some logic/randomness wheter a combined name of first-, middle- and lastname is used _or_ a full nickname.
 
-## Contribution
+## ℹ️ Notice
+
+Use browser extensions at your own risk.
+
+Always reassure that the extension didn't edit any input fields or textareas in the browser, like Github or other sites where frontend editing is possible.
+
+I'm not responsible for possible wrong submitted data or reduced rendering performance.
+
+## 🔀 Contribution
 
 Feel free to open pull requests with new names or persons.
-
-NOTICE: be sure to not have the extension activated in the browser, when using the Github frontend editor.
-It will probably also do it's replacements in there and introduce bugs. This will be fixed in a future version, but just to be sure.
 
 When adding new persons follow this format of the object:
 
@@ -70,5 +73,14 @@ Please don't submit stuff, that is out of the borders of satire.
 - first do: `npm install`
 - for development in Firefox run `npm run start:firefox`
 - the extension will reload if any source file changes
+- Before submitting code:
+  please use Prettier by using `npx prettier --write .`
 
-Please use Prettier by using `npx prettier --write .`
+## 👍 Credits
+
+- Inspiration and original substitutions come from this [reddit.com/r/de thread](https://old.reddit.com/r/de/comments/cea32a/kleine_ansammlung_von_namensbausteinen_und/)
+
+- Forked from https://github.com/viktorsec/bumpercar-candysnatch
+- Or write an issue with suggestions and I'll add them later
+
+- Thanks to all the contributors, be it PRs, suggestions on reddit or whatever
