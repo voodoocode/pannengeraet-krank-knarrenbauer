@@ -216,4 +216,12 @@ const people = [
     substitutionsLast: ["Merkel"],
     substitutionsComplete: ["Mutti"],
   },
+  {
+    regexName: /(?:Björn )?Höcke/gi,
+    regexAbbrev: null,
+    substitutionsFirst: ["Bernd"],
+    substitutionsMiddle: [" "],
+    substitutionsLast: ["Höcke"],
+    substitutionsComplete: ["AfD-Onkel"],
+  },
 ];
