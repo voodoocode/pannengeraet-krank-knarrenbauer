@@ -3,8 +3,9 @@ const getRandomEntry = (entries) =>
 
 const pageHtml = document.getElementsByTagName("html")[0].innerHTML;
 
-let getting = browser.storage.sync.get("settings");
-getting.then(doReplacements);
+let getting = chrome.storage.sync.get("settings", (res)=> {
+  doReplacements(res)
+});
 
 function doReplacements(storage) {
   let settings_persons;
@@ -17,7 +18,7 @@ function doReplacements(storage) {
     };
 
     var json = JSON.stringify(settings_persons);
-    browser.storage.sync.set({
+    chrome.storage.sync.set({
       settings: json,
     });
   }

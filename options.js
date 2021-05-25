@@ -8,7 +8,7 @@ function saveOptions(e) {
   });
   var json = JSON.stringify(object);
 
-  browser.storage.sync.set({
+  chrome.storage.sync.set({
     settings: json,
   });
 }
@@ -26,7 +26,7 @@ function restoreOptions() {
       };
 
       var json = JSON.stringify(persons);
-      browser.storage.sync.set({
+      chrome.storage.sync.set({
         settings: json,
       });
     }
@@ -38,8 +38,9 @@ function restoreOptions() {
     }
   }
 
-  let getting = browser.storage.sync.get("settings");
-  getting.then(setCurrentChoice);
+  let getting = chrome.storage.sync.get("settings", (res)=> {
+    setCurrentChoice(res);
+  });
 }
 
 function loadPeople() {
