@@ -205,7 +205,7 @@ const people = [
     substitutionsFirst: ["Annalena"],
     substitutionsMiddle: [" "],
     substitutionsLast: ["Bärbaum"],
-    substitutionsComplete: ["Die Annalena"],
+    substitutionsComplete: ["Die Annalena", "ACAB"],
   },
   {
     id: "person-6",
